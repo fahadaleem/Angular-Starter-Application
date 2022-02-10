@@ -1,0 +1,21 @@
+.nav {
+  background-color: #4946ddd7;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  color: #fff;
+}
+
+.nav div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-btn {
+  background-color: #efefef;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+}
