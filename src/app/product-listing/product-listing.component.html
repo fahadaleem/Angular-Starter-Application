@@ -1,11 +1,20 @@
-<div *ngFor="let product of products" class="product-card">
-  <h1 class="product-name">
-    {{ product.name }} - {{ product.price | currency }}
-  </h1>
-  <p class="product-description">
-    {{ product.description }}
-  </p>
-  <button type="button" class="buy-now-btn" (click)="handleBuyNow(product.id)">
-    Buy Now
-  </button>
+<div *ngFor="let product of products">
+  <div class="product-card" [routerLink]="['product/' + product.id]">
+    <h1 class="product-name">
+      {{ product.name }} - {{ product.price | currency }}
+    </h1>
+    <p class="product-description" *ngIf="product.description">
+      {{ product.description }}
+    </p>
+    <button type="button" class="btn" (click)="handleBuyNow(product.id)">
+      Buy Now
+    </button>
+    <button
+      type="button"
+      class="btn btn-view"
+      (click)="handleBuyNow(product.id)"
+    >
+      View Details
+    </button>
+  </div>
 </div>

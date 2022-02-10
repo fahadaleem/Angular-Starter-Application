@@ -1,0 +1,18 @@
+<div class="product-detail" *ngIf="product; else notFound">
+  <h1>Product Detail</h1>
+  <div class="product-detail-top">
+    <h2 class="name">{{ product.name }}</h2>
+    <h3 class="name">Product price</h3>
+  </div>
+  <p class="product-description">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptate
+    quisquam modi commodi rerum maxime culpa reiciendis beatae soluta assumenda
+    cumque consectetur, cupiditate saepe, sed nemo placeat in, enim doloremque?
+  </p>
+</div>
+
+<ng-template #notFound>
+  <div class="product-detail">
+    <h1 class="product-description">Not Found...</h1>
+  </div>
+</ng-template>

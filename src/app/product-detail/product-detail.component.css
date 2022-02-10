@@ -1,0 +1,12 @@
+.product-detail {
+  padding: 30px;
+  max-width: 850px;
+  margin: 0 auto;
+  min-width: 300px;
+}
+
+.product-detail-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
